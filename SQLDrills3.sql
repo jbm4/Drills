@@ -1,5 +1,5 @@
-SELECT *
-FROM hof_inducted;
+--1.
+https://drive.google.com/file/d/1AOZkcgkRSoLBpdv0BSACHxBmFvznZShz/view?usp=sharing
 
 -- 2. Write a query that returns the namefirst and namelast fields of the people table, 
 -- along with the inducted field from the hof_inducted table. 
@@ -120,7 +120,7 @@ FROM hof_inducted AS hof
 LEFT JOIN people AS pp
 ON hof.playerid=pp.playerid
 
-UNION --why union all here?
+UNION ALL --why union all here?
 
 SELECT nothof.playerid,
 	yearid,
